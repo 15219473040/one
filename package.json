@@ -15,6 +15,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "antd": "^3.4.3"
+    "antd": "^3.4.3",
+    "react-router": "^3.2.1"
   }
 }
