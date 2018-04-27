@@ -7,6 +7,7 @@ import App from './App';
 import Page from './Page';
 import Buttons from './component/general/Buttons';
 import Icons from './component/general/Icons';
+import Login from "./component/control/Login"
  
 
 const Public =()=>(<h4>about</h4>);
@@ -21,6 +22,9 @@ ReactDOM.render(
                 <Route path={"general"} >
                     <Route path={"button"} component={Buttons}/>
                     <Route path={"icon"} component={Icons}/>
+                </Route>
+                <Route path={"control"} >
+                    <Route path={"login"} component={Login}/>
                 </Route>
             </Route>
         </Route>

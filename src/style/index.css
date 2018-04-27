@@ -1,6 +1,13 @@
 
-
-
+#components-form-demo-normal-login .login-form {
+  max-width: 300px;
+}
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+}
+#components-form-demo-normal-login .login-form-button {
+  width: 100%;
+}
 
 
 
@@ -25,4 +32,5 @@
   background: rgba(255,255,255,.2);
   margin: 16px;
 }
+ .icon_item{font-size: 18px;}
  

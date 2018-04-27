@@ -39,7 +39,26 @@ class Icons extends Component {
     const size = this.state.size;
     return (
       <div>
-       {emojiList()}
+            <ul style={{ listStyle:"decimal-leading-zero"}}>
+           <li className='icon_item'> <Icon type="step-backward" /></li>
+           <li className='icon_item'> <Icon type="step-forward" /></li>
+           <li className='icon_item'> <Icon type="fast-backward" /></li>
+           <li className='icon_item'> <Icon type="fast-forward" /></li>
+           <li className='icon_item'> <Icon type="shrink" /></li>
+           <li className='icon_item'> <Icon type="arrows-alt" /></li>
+           <li className='icon_item'> <Icon type="down" /></li>
+           <li className='icon_item'> <Icon type="up" /></li>
+           <li className='icon_item'> <Icon type="left" /></li>
+           <li className='icon_item'> <Icon type="right" /></li>
+           <li className='icon_item'> <Icon type="caret-up" /></li>
+           <li className='icon_item'> <Icon type="caret-down" /></li>
+           <li className='icon_item'> <Icon type="caret-left" /></li>
+           <li className='icon_item'> <Icon type="caret-right" /></li>
+           <li className='icon_item'> <Icon type="up-circle" /></li>
+           <li className='icon_item'> <Icon type="down-circle" /></li>
+           <li className='icon_item'> <Icon type="left-circle" /></li>
+           <li className='icon_item'> <Icon type="right-circle" /></li>
+        </ul>
       </div>
     );
   }

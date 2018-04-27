@@ -2,6 +2,7 @@ import React, { Component } from 'react';
  
 import { Link } from 'react-router';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+ 
 const { Header, Content, Footer, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
 
@@ -28,10 +29,9 @@ class SiderCustom extends Component {
             </SubMenu>
             <SubMenu
               key="sub2"
-              title={<span><Icon type="team" /><span>Team</span></span>}
+              title={<span><Icon type="team" /><span>权限控制</span></span>}
             >
-              <Menu.Item key="6">Team 1</Menu.Item>
-              <Menu.Item key="8">Team 2</Menu.Item>
+                <Menu.Item key="6"><Link to={"/app/control/login"}>登录</Link></Menu.Item>
             </SubMenu>
             <Menu.Item key="9">
               <Icon type="file" />
