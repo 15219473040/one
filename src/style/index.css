@@ -34,3 +34,11 @@
 }
  .icon_item{font-size: 18px;}
  
+
+ .ant-carousel .slick-slide {
+  text-align: center;
+  height: 260px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}

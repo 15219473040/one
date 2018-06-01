@@ -33,6 +33,12 @@ class SiderCustom extends Component {
             >
                 <Menu.Item key="6"><Link to={"/app/control/login"}>登录</Link></Menu.Item>
             </SubMenu>
+              <SubMenu
+                  key="sub3"
+                  title={<span><Icon type="team" /><span>GIT 系列</span></span>}
+                  >
+                  <Menu.Item key="7"><Link to={"/app/git/tuchong"}>图虫</Link></Menu.Item>
+              </SubMenu>
             <Menu.Item key="9">
               <Icon type="file" />
               <span>File</span>

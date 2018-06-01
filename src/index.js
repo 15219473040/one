@@ -8,7 +8,7 @@ import Page from './Page';
 import Buttons from './component/general/Buttons';
 import Icons from './component/general/Icons';
 import Login from "./component/control/Login"
- 
+import Tuchong from "./component/git/Tuchong.js"
 
 const Public =()=>(<h4>about</h4>);
 const Protected = () => (<h4>Protected</h4>);
@@ -25,6 +25,9 @@ ReactDOM.render(
                 </Route>
                 <Route path={"control"} >
                     <Route path={"login"} component={Login}/>
+                </Route>
+                <Route path={"git"} >
+                    <Route path={"tuchong"} component={Tuchong}/>
                 </Route>
             </Route>
         </Route>

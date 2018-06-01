@@ -12,10 +12,18 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "node server/index.js"
   },
   "devDependencies": {
     "antd": "^3.4.3",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "http-proxy-middleware": "^0.18.0",
+    "json-server": "^0.12.2",
     "react-router": "^3.2.1"
   }
 }
