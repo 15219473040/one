@@ -23,8 +23,9 @@ class SiderCustom extends Component {
               key="sub1"
               title={<span><Icon type="bars" /><span>General</span></span>}
             >
-              <Menu.Item key="3"><Link to={"/app/general/button"}>button</Link></Menu.Item>
-              <Menu.Item key="4"><Link to={"/app/general/icon"}>icon</Link></Menu.Item>
+              <Menu.Item key="300"><Link to={"/app/general/button"}>button</Link></Menu.Item>
+              <Menu.Item key="301"><Link to={"/app/general/icon"}>icon</Link></Menu.Item>
+              <Menu.Item key="302"><Link to={"/app/general/grid"}>grid</Link></Menu.Item>
       
             </SubMenu>
             <SubMenu

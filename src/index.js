@@ -7,6 +7,8 @@ import App from './App';
 import Page from './Page';
 import Buttons from './component/general/Buttons';
 import Icons from './component/general/Icons';
+import Grid from './component/general/Grid';
+
 import Login from "./component/control/Login"
 import Tuchong from "./component/git/Tuchong.js"
 
@@ -22,6 +24,7 @@ ReactDOM.render(
                 <Route path={"general"} >
                     <Route path={"button"} component={Buttons}/>
                     <Route path={"icon"} component={Icons}/>
+                    <Route path={"grid"} component={Grid}/>
                 </Route>
                 <Route path={"control"} >
                     <Route path={"login"} component={Login}/>

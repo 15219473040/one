@@ -1,8 +1,14 @@
 
 import React, { Component } from 'react';
 import axios from "axios"
-import { Row, Col, Pagination, Tooltip, Progress, Carousel, Affix } from 'antd';
+import { Row, Col, Pagination, Tooltip, Progress, Carousel, Affix,Layout,Tabs  } from 'antd';
+
 import IMG from "./IMG..js"
+
+const {Header,Content} = Layout;
+const TabPane = Tabs.TabPane;
+
+
 export default  class Tuchong extends Component {
     constructor(props){
         super(props);
@@ -34,11 +40,22 @@ export default  class Tuchong extends Component {
 
 
    }
+    componentDidMount(){
+        "use strict";
+
+    }
     onChange = (page) => {
         console.log(page);
         this.setState({
             current: page,
         });
+
+        if(page==5){
+            axios.get("https://cors-anywhere.herokuapp.com/https://api.douban.com/v2/book/isbn/9787115299710").then(res=>{
+                console.log(res)
+
+            })
+        }
     }
 
     render(){
@@ -52,13 +69,13 @@ export default  class Tuchong extends Component {
             <Affix offsetTop={100}>
 
                 <Pagination current={this.state.current} onChange={this.onChange} total={this.state.page} pageSize={1}/>
-            </Affix> 
+            </Affix>
 
                     {/* <Row gutter={8}>
-             
+
                         {this.state.feedList.length?
                             this.state.feedList.map((item,ind)=>{
-                                
+
                                 return <Col xs={24}>
                                     <div style={{height:"500px"}}>
 
@@ -68,9 +85,36 @@ export default  class Tuchong extends Component {
                                 </Col>
                             })
                             :""}
-                    
+
                     </Row> */}
-           
+             <Layout>
+                <Header style={{color:"#fff"}}>新书速递
+                    <span>更多»</span>
+                     <div className="card-container">
+                     <Tabs type="card">
+                         <TabPane tab="Tab Title 1" key="1">
+                             <p>Content of Tab Pane 1</p>
+                             <p>Content of Tab Pane 1</p>
+                             <p>Content of Tab Pane 1</p>
+                         </TabPane>
+                         <TabPane tab="Tab Title 2" key="2">
+                             <p>Content of Tab Pane 2</p>
+                             <p>Content of Tab Pane 2</p>
+                             <p>Content of Tab Pane 2</p>
+                         </TabPane>
+                         <TabPane tab="Tab Title 3" key="3">
+                             <p>Content of Tab Pane 3</p>
+                             <p>Content of Tab Pane 3</p>
+                             <p>Content of Tab Pane 3</p>
+                         </TabPane>
+                     </Tabs>
+                     </div>
+                </Header>
+                 <Content>
+                 </Content>
+             </Layout>
+
+
             .</div>
     }
 
